@@ -87,7 +87,7 @@ int main(int argc, char **argv) {
 		appley = (rand() % (BOTTOM-TOP-1)+TOP+1);
 		//Print starting points
 		move(0,LEFTEDGE+1);
-		addstr("Points:0");
+		addstr("Points:0   ");
 		return;
 	}
 
@@ -134,7 +134,7 @@ int main(int argc, char **argv) {
 	attroff(COLOR_PAIR(WALLSCOLOR));
 	//Print starting points
 	move(0,LEFTEDGE+1);
-	addstr("Points:0");
+	addstr("Points:0   ");
 	while(breaker) {
 		curs_set(0);
 		//Draw snake
